@@ -1,3 +1,72 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$white: #fff;
+$black: #333;
+$body-font: 'Open Sans', sans-serif;
+$header-font: 'Quicksand', sans-serif;
+
+%clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+html {
+  background: image-url('IMG_5865.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $black;
+  font-family: $body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font;
+}
+
+nav {
+  width: 100%;
+  background-color: transparentize($white, 0.2);
+  position: fixed;
+  top: 0;
+  height: 70px;
+
+  h1 {
+    float: left;
+    padding-left: 20px;
+  }
+
+  ul {
+    float: right;
+    text-align: right;
+    padding-right: 30px;
+  }
+
+  li {
+    list-style-type: none;
+    display: inline;
+  }
+
+  a {
+    display: inline-block;
+    padding: 10px;
+  }
+}
+
+.container {
+  width: 70%;
+  margin: 70px auto;
+  padding: 20px;
+  background-color: $white;
+}
